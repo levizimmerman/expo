@@ -2840,6 +2840,7 @@ PODS:
   - SDWebImageWebPCoder (0.11.0):
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.15)
+  - SocketRocket (0.6.0)
   - Stripe (23.3.4):
     - StripeApplePay (= 23.3.4)
     - StripeCore (= 23.3.4)
@@ -3345,6 +3346,7 @@ DEPENDENCIES:
   - RNReanimated (from `./vendored/unversioned/react-native-reanimated`)
   - RNScreens (from `./vendored/unversioned/react-native-screens`)
   - RNSVG (from `./vendored/unversioned/react-native-svg`)
+  - SocketRocket (~> 0.6.0)
   - "stripe-react-native (from `./vendored/unversioned/@stripe/stripe-react-native`)"
   - UMAppLoader (from `../packages/unimodules-app-loader/ios`)
   - Yoga (from `../react-native-lab/react-native/ReactCommon/yoga`)
@@ -3392,6 +3394,7 @@ SPEC REPOS:
     - SDWebImageAVIFCoder
     - SDWebImageSVGCoder
     - SDWebImageWebPCoder
+    - SocketRocket
     - Stripe
     - StripeApplePay
     - StripeCore
@@ -4771,6 +4774,7 @@ SPEC CHECKSUMS:
   SDWebImageAVIFCoder: 4aeea8fdf65af5c18525ecb5bdd8b8ed9bb45019
   SDWebImageSVGCoder: 15a300a97ec1c8ac958f009c02220ac0402e936c
   SDWebImageWebPCoder: 295a6573c512f54ad2dd58098e64e17dcf008499
+  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Stripe: 7393b16fe555d4a68e6555044e7b57eff11ae547
   stripe-react-native: c71683ecc56c63eecbb7172c2f97c8ac737fa37c
   StripeApplePay: 174b09c0211134417e340c68af199a3dd34f3cd6
@@ -4784,6 +4788,6 @@ SPEC CHECKSUMS:
   Yoga: d56980c8914db0b51692f55533409e844b66133c
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 7261d0c78158329552e06df3542b8ca4a986f63b
+PODFILE CHECKSUM: 6a5645c39df533b327cfbe4c08c4dd0ab4b607ed
 
 COCOAPODS: 1.12.1
