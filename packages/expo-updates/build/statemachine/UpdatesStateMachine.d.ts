@@ -1,13 +1,41 @@
+export declare enum UpdatesStateMachineEventTypes {
+    CHECK = "check",
+    CHECK_COMPLETE_AVAILABLE = "checkCompleteAvailable",
+    CHECK_COMPLETE_UNAVAILABLE = "checkCompleteUnavailable",
+    CHECK_ERROR = "checkError",
+    DOWNLOAD = "download",
+    DOWNLOAD_COMPLETE = "downloadComplete",
+    DOWNLOAD_ERROR = "downloadError",
+    RESTART = "restart"
+}
+/**
+ * Simplified model for an update manifest
+ */
+export type Manifest = {
+    updateId: string;
+};
+/**
+ * Model for an update event
+ */
+export type UpdatesStateMachineEvent = {
+    type: UpdatesStateMachineEventTypes;
+    body: {
+        message?: string;
+        manifest?: Manifest;
+        isRollBackToEmbedded?: boolean;
+    };
+};
 /**
  * The context structure (analogous to what is exposed in @expo/use-updates)
  */
 export interface UpdatesContext {
     isUpdateAvailable: boolean;
     isUpdatePending: boolean;
-    latestUpdateId?: number;
+    latestManifest?: Manifest;
     isChecking: boolean;
     isDownloading: boolean;
-    downloadedUpdateId?: number;
+    isRollback: boolean;
+    downloadedManifest?: Manifest;
     checkError?: Error;
     downloadError?: Error;
 }
