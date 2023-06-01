@@ -40,6 +40,17 @@ export default ({ config }) => {
         packagePath: '../../../packages/expo-modules-test-core/android',
       },
     ],
+    [
+      'expo-build-properties',
+      {
+        android: {
+          unstable_networkInspector: true,
+        },
+        ios: {
+          unstable_networkInspector: true,
+        },
+      },
+    ],
   ];
 
   config.plugins.push([
